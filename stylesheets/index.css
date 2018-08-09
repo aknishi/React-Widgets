@@ -1,0 +1,191 @@
+html, body, header, nav, h1, a,
+ul, li, strong, main, button, i,
+section, img, div, h2, p, form,
+fieldset, label, input, textarea,
+span, article, footer, time, small {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font: sans-serif;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  box-sizing: inherit;
+  background: transparent;
+  list-style: none;
+}
+
+.clock {
+  font-size: 28px;
+  font-family: 'Fjalla One';
+  width: 550px;
+  height: 70px;
+  border: 2px solid black;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  background-color: orange;
+  /* background-image: url(https://hd.unsplash.com/photo-1445109673451-c511bb51bd17); */
+  /* background-size: cover; */
+  /* background-position-y: 20%; */
+}
+
+.clock p {
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+}
+
+.interactive {
+  width: 590px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Weather */
+
+.weather{
+  font-size: 28px;
+  width: 550px;
+  height: 50px;
+  border: 2px solid black;
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+  text-align: center;
+  background-color: lightgreen;
+  background-image: url('../shttefan-294119-unsplash.jpg');
+  background-size: cover;
+  background-position-y: 20%;
+  color: black;
+}
+
+.weather p{
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.loading{
+  margin-top: 8px;
+}
+
+/* Tabs */
+
+.tab-header{
+  width: 240px;
+  height: 30px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tab-header > li {
+  width: 80px;
+  border-top: 2px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 4px;
+  text-align: center;
+  cursor: pointer;
+  background-color: lightpink;
+  text-transform: uppercase;
+}
+
+.tab-header > li:first-child {
+  border-left: 2px solid black;
+}
+
+.tab-header > li:last-child {
+  border-right: 2px solid black;
+}
+
+.tab-header > li:hover {
+  background-color: black;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.tabs{
+  width: 280px;
+  height: 220px;
+}
+
+.tab-content{
+  color: black;
+  height: 190px;
+  margin: 0 20px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  background-image: url(https://hd.unsplash.com/photo-1445112098124-3e76dd67983c);
+  background-size: cover;
+}
+
+.tab-content article {
+  text-align: center;
+}
+
+/* Autocomplete */
+
+.auto > * {
+  margin-left: 10px;
+}
+
+.auto input {
+  width: 90%;
+  height: 20px;
+  margin: 10px;
+  border: 1px solid black;
+  background-color: white;
+  font-size: 16px;
+}
+
+.auto li {
+  cursor: pointer;
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+.auto {
+  width: 300px;
+  height: 218px;
+  margin: 10px;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
+
+.auto-enter {
+   opacity: 0.01;
+   transform: translateY(500%);
+ }
+
+ .auto-enter.auto-enter-active {
+   opacity: 1;
+   transform: translateY(0);
+   transition: opacity 500ms, transform 500ms;
+ }
+
+ .auto-leave {
+   opacity: 1;
+   transform: translateY(0);
+ }
+
+ .auto-leave.auto-leave-active {
+   opacity: 0.01;
+   transform: translateY(500%);
+   transition: opacity 500ms, transform 500ms;
+ }
